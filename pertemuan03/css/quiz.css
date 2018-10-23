@@ -1,0 +1,15 @@
+p { 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+/* Ini komentar, tidak akan diproses oleh browser */
+
+p.ungu, span { 
+    color: fuchsia; 
+
+    /* Ini jenis komentar yang
+    bisa multi baris */
+
+    /* line 1 */
+    /* line 2 */
+}
