@@ -4,7 +4,9 @@ table {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-th, tr, td {
+th, 
+tr, 
+td {
     border: 1px solid lightgray;
 }
 
@@ -18,8 +20,11 @@ tr:nth-child(even) {
     background-color: beige;
 }
 
-tr:hover, 
 tr:nth-child(even):hover {
+    background-color: pink;
+}
+
+tr:hover {
     background-color: lightblue;
 }
 
