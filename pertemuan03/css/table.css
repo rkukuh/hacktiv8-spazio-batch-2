@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, tr, td {
+    border: 1px solid lightgray;
+}
+
+th {
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(233, 233, 233);
+}
+
+tr:nth-child(even) {
+    background-color: beige;
+}
+
+tr:hover, 
+tr:nth-child(even):hover {
+    background-color: lightblue;
+}
+
+td {
+    padding: 10px;
+}
+
+td.urutan {
+    text-align: center;
+}
+
+.price {
+    text-align: right;
+}
