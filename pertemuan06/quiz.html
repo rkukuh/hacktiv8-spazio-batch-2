@@ -22,27 +22,39 @@
             </div>
 
             <form>
-                <div class="form-group">
+                <div class="form-group has-error">
                     <input type="nama-lengkap" class="form-control" 
                             placeholder="Nama Lengkap">
 
                     <p class="help-block">Nama lengkap harus diisi.</p>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group has-error">
                     <input type="email" class="form-control" 
                             placeholder="Email atau Nomor Handphone">
 
                     <p class="help-block">E-mail atau nomor handphone harus diisi.</p>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label class="radio-inline">
                         <input type="radio" name="jk" value="pria"> Laki-Laki
                     </label>
                     <label class="radio-inline">
                         <input type="radio" name="jk" value="wanita"> Perempuan
                     </label>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Bukalapak.com/</span>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <p class="help-block">
+                        Tuliskan username yang diinginkan. 
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    </p>
                 </div>
 
                 <button type="submit" class="btn btn-default">Submit</button>
