@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Hacktiv8 : Pertemuan 07 : Quiz</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <style>
+        h1 { 
+            border-bottom: 5px solid fuchsia; 
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        
+        #login-form, #register-form { padding: 20px; }
+        
+        #register-form { border-left: 1px solid lightgray; }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <h1 class="garis-bawah">
+                Toko Es Krim 😋
+                <br>
+                <small>
+                    INSTRUKSI: Fokus pada 1) Pembuatan Form, 2) Layouting, 3) Styling
+                </small>
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" id="login-form">
+
+                <h3>Login Here</h3>
+
+                <hr>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" class="form-control" id="login-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <input type="password" class="form-control" id="login-password" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Masuk</button>
+                    <button type="reset" class="btn btn-default">Kosongkan Form</button>
+                </form>
+                
+            </div>
+
+            <div class="col-md-6" id="register-form">
+                
+                <h3>Register Form</h3>
+
+                <hr>
+
+                <form>
+                    <div class="form-group">
+                        <label for="register-email">Email:</label>
+                        <input type="email" class="form-control" id="register-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password:</label>
+                        <input type="password" class="form-control" id="register-password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password:</label>
+                        <input type="password" class="form-control" id="register-confirm-password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Daftar Sekarang</button>
+                    <button type="reset" class="btn btn-default">Kosongkan Form</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center" 
+                 style="background-color: bisque; padding: 10px; margin-top: 20px;">
+                Copyrigh &copy; 2018. Nama Anda.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
