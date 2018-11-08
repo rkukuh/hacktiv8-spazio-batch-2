@@ -10,87 +10,102 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
     <style>
+        h1 { font-family: "Arial Black"; }
         #judul { margin-bottom: 40px; }
+        .help-block { font-size: 12px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="col-md-offset-4 col-md-4">
-            <div class="text-center" id="judul">
-                <h1>Bukalapak</h1>
-                <h4>Daftar akun baru sekarang</h4>
-            </div>
-
-            <form>
-                <div class="form-group has-error">
-                    <input type="nama-lengkap" class="form-control" 
-                            placeholder="Nama Lengkap">
-
-                    <p class="help-block">Nama lengkap harus diisi.</p>
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+                <div class="text-center" id="judul">
+                    <h1 class="text-danger">Bukalapak</h1>
+                    <h4>Daftar akun baru sekarang</h4>
                 </div>
-
-                <div class="form-group has-error">
-                    <input type="email" class="form-control" 
-                            placeholder="Email atau Nomor Handphone">
-
-                    <p class="help-block">E-mail atau nomor handphone harus diisi.</p>
-                </div>
-
-                <div class="form-group">
-                    <label class="radio-inline">
-                        <input type="radio" name="jk" value="pria"> Laki-Laki
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="jk" value="wanita"> Perempuan
-                    </label>
-                </div>
-
-                <div class="form-group">
-                    <div class="input-group">
-                        <span class="input-group-addon">Bukalapak.com/</span>
-                        <input type="text" class="form-control">
+    
+                <form>
+                    <div class="form-group has-error">
+                        <input type="nama-lengkap" class="form-control" 
+                                placeholder="Nama Lengkap">
+    
+                        <p class="help-block">Nama lengkap harus diisi.</p>
                     </div>
-
-                    <p class="help-block">
-                        Tuliskan username yang diinginkan. 
-                        <i class="glyphicon glyphicon-question-sign"></i>
-                    </p>
+    
+                    <div class="form-group has-error">
+                        <input type="email" class="form-control" 
+                                placeholder="Email atau Nomor Handphone">
+    
+                        <p class="help-block">E-mail atau nomor handphone harus diisi.</p>
+                    </div>
+    
+                    <div class="form-group">
+                        <label class="radio-inline">
+                            <input type="radio" name="jk" value="pria"> Laki-Laki
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="jk" value="wanita"> Perempuan
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">Bukalapak.com/</span>
+                            <input type="text" class="form-control">
+                        </div>
+    
+                        <p class="help-block">
+                            Tuliskan username yang diinginkan. 
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                        </p>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="password" class="form-control" 
+                                placeholder="Password Bukalapak">
+    
+                        <p class="help-block">Digunakan untuk pencairan dana dan perubahan data diri.</p>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="password" class="form-control" 
+                                placeholder="Konfirmasi Password Bukalapak">
+                    </div>
+    
+                    <div class="checkbox" style="margin-top: 40px;">
+                        <label>
+                            <input type="checkbox"> 
+                            Saya telah membaca dan menyetujui <a href="#">Aturan Penggunaan</a> dan 
+                            <a href="#">Kebijakan Privasi</a> Bukalapak
+                        </label>
+                    </div>
+    
+                    <button type="submit" class="btn btn-block btn-danger">Daftar</button>
+                </form>
+    
+                <hr>
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-default btn-block">
+                            <img src="https://cdn2.iconfinder.com/data/icons/20-free-flat-shadow-style-original-colour-icons/256/social_media_icons_flat_shadow_set_256x256_0000_facebook.png" alt="" width="16px">
+                            Daftar dengan Facebook
+                        </a>
+                        
+                        <a href="#" class="btn btn-default btn-block">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/google-231-432517.png" alt="" width="16px">
+                            Daftar dengan Google
+                        </a>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <input type="password" class="form-control" 
-                            placeholder="Password Bukalapak">
-
-                    <p class="help-block">Digunakan untuk pencairan dana dan perubahan data diri.</p>
+                <div class="row" style="margin-top: 40px">
+                    <div class="col-md-12 text-center">
+                        Sudah punya akun? 
+                        <a href="#">Silahkan login</a>
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <input type="password" class="form-control" 
-                            placeholder="Konfirmasi Password Bukalapak">
-                </div>
-
-                <div class="checkbox" style="margin-top: 40px;">
-                    <label>
-                        <input type="checkbox"> 
-                        Saya telah membaca dan menyetujui <a href="#">Aturan Penggunaan</a> dan 
-                        <a href="#">Kebijakan Privasi</a> Bukalapak
-                    </label>
-                </div>
-
-                <button type="submit" class="btn btn-block btn-danger">Daftar</button>
-            </form>
-
-            <hr>
-
-            <a href="#" class="btn btn-default btn-block">
-                <img src="https://cdn2.iconfinder.com/data/icons/20-free-flat-shadow-style-original-colour-icons/256/social_media_icons_flat_shadow_set_256x256_0000_facebook.png" alt="" width="16px">
-                Daftar dengan Facebook
-            </a>
-            
-            <a href="#" class="btn btn-default btn-block">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/google-231-432517.png" alt="" width="16px">
-                Daftar dengan Google
-            </a>
+            </div>
         </div>
     </div>
 </body>
