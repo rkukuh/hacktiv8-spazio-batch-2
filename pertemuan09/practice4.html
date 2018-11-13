@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operator AND (&&) dan Nested IF</h1>
+
+    <h2></h2>
+    
+    <script>
+        let sudahJadiMember = false;
+        let username = 'hacktiv';
+        let password = 'hacktiv8';
+
+        if (sudahJadiMember) {
+            
+            if (username == 'hacktiv' && password == 'hacktiv8') {
+                document.getElementsByTagName('h2')[0].innerHTML = 'Welcome aboard!';
+            } else {
+                document.getElementsByTagName('h2')[0].innerHTML = 'Username / Password salah!';
+            }
+
+        } else {
+            document.getElementsByTagName('h2')[0].innerHTML = 'Silahkan mendaftar dulu!';
+        }
+    </script>
+</body>
+</html>
