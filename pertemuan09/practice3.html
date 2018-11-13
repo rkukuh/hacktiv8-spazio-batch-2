@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prompt dan Kondisi (IF-ELSE)</h1>
+
+    <h2></h2>
+    <h2></h2>
+    
+    <script>
+        let password = prompt('Masukkan password');
+
+        if (password == 'rahasia') {
+            document.getElementsByTagName('h2')[0].innerText = 'Selamat Datang';
+            document.getElementsByTagName('h2')[1].innerText = 'Welcome';
+        } else {
+            window.location = 'http://www.google.com';
+        }
+    </script>
+</body>
+</html>
