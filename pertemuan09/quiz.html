@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Practice7 (Prompt, IF-ELSE)</h1>
+
+    <p>
+        Tanyakan: 
+        <b>Jenis Kelamin</b>, 
+        <b>Nama</b>, dan 
+        <b>Pesanan</b> yang diminta
+    </p>
+
+    <p>Lalu tampilkan: <b>Halo (Mr/Ms) [nama], Terima Kasih telah memesan [pesanan]</b></p>
+
+    <h2 style="color: red;"></h2>
+
+    <script>
+        let nama = prompt('Nama Anda?');
+        let jenisKelamin = prompt('Jenis Kelamin? (pria / wanita)');
+        let pesanan = prompt('Pesanan Anda?');
+
+        if (jenisKelamin == 'pria') {
+            sapaan = 'Mr.';
+        } else if (jenisKelamin == 'wanita') {
+            sapaan = 'Mrs.';
+        }
+
+        let hasil = 'Halo ' + sapaan + ' ' + nama + ', Terima Kasih telah memesan ' + pesanan;
+
+        document.getElementsByTagName('h2')[0].innerHTML = hasil;
+    </script>
+
+</body>
+</html>
