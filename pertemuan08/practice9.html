@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hacktiv8: Pertemuan 08: Practice 9</title>
+</head>
+<body>
+
+    <form>
+        Nama: <input type="text" name="nama" id="nama">
+        <br>
+        Email: <input type="email" name="email" id="email">
+        <br>
+        <button type="button" name="simpan" id="simpan">Simpan</button>
+    </form>
+    
+    <script src="../jquery/jquery-3.3.1.js"></script>
+
+    <script>
+        $('#simpan').click(function () {
+            let nama = $('#nama').val();
+            let email = $('#email').val();
+
+            console.log('Nama lengkap = ' + nama);
+            console.log('Email aktif = ' + email);
+        });
+    </script>
+    
+</body>
+</html>
