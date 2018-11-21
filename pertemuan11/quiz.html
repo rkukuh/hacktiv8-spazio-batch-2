@@ -11,12 +11,19 @@
     <script>
         let pesanan = '';
 
+        let daftarPesanan = [];
+
         while (pesanan != 'selesai') {
             
             pesanan = prompt('Pesanan Anda? (ketik "selesai" untuk mengakhiri)');
-            
-            console.log(pesanan);
+
+            if (pesanan != 'selesai') {
+                
+                daftarPesanan.push(pesanan);
+            }
         }
+
+        console.table(daftarPesanan);
     </script>
 </body>
 </html>

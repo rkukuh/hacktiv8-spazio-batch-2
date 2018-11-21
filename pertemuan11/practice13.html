@@ -7,14 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Membuat Array</h1>
+    <h1>Membaca Array (hanya index ganjil) menggunakan Looping</h1>
 
     <script>
-        let programming = ['PHP', 'Javascript', 'SQL'];
-
-        // console.log(programming);
+        let programming = ['PHP', 'Javascript', 'SQL', 'React', 'Angular', 'Vue', 'jQuery'];
 
         console.table(programming);
+
+        for (let index = 1; index < programming.length; index += 2) {
+            console.log('Index ke-' + index + ': ' + programming[index]);
+        }
     </script>
 </body>
 </html>
