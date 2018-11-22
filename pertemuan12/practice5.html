@@ -21,11 +21,13 @@
             }
         ];
 
+        // Mengiterasi object "resto"
         for (let index = 0; index < restaurants.length; index++) {
             
             console.log('Resto: ' + restaurants[index].name);
             console.log('Sedia:');
 
+            // Mengiterasi array "makanan"
             for (let counter = 0; 
                  counter < restaurants[index].makanan.length; 
                  counter++) {
