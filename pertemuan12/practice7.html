@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <style>
+        h1 { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JS Object + jQuery + Bootstrap</h1>
+
+        <div class="row">
+            <div class="col-md-3">
+                <p id="nama1"></p>
+                <img id="pic1" width="200px">
+            </div>
+            <div class="col-md-3">
+                <p id="nama2"></p>
+                <img id="pic2" width="200px">
+            </div>
+            <div class="col-md-3">
+                <p id="nama3"></p>
+                <img id="pic3" width="200px">
+            </div>
+            <div class="col-md-3">
+                <p id="nama4"></p>
+                <img id="pic4" width="200px">
+            </div>
+        </div>
+    </div>
+
+    <script src="../jquery/jquery-3.3.1.js"></script>
+
+    <script>
+        let foods = [
+            iceCream = {
+                name: 'Durian Breeze',
+                picture: '../images/eskrim1.jpg'
+            },
+            iceCream = {
+                name: 'Pretzel Choco',
+                picture: '../images/eskrim2.jpg'
+            },
+            iceCream = {
+                name: 'Strawberry Fantasy',
+                picture: '../images/eskrim3.jpg'
+            },
+            iceCream = {
+                name: 'Hazelnut Cold',
+                picture: '../images/eskrim4.jpg'
+            }
+        ];
+
+        for (let index = 0; index < foods.length; index++) {
+            $('p#nama' + (index + 1)).html('<b>' + foods[index].name + '</b>');
+            $('img#pic' + (index + 1)).attr('src', foods[index].picture);
+        }
+    </script>
+</body>
+</html>
