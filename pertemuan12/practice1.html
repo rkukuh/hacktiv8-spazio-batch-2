@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Membuat JS Object (simple)</h1>
+
+    <script>
+        let car = {
+            manufaktur: 'BMW',
+            model: 'M4',
+            warna: 'Putih',
+            racingType: true,
+            mesin: {
+                engine: 'V8',
+                horsepower: 425
+            }
+        }
+
+        console.log('===== CAR INFO =====');
+        console.log('Merk: ' + car.manufaktur + ' ' + car.model);
+        console.log('Warna: ' + car.warna);
+        console.log('Tipe Mesin: ' + car.mesin.engine);
+        console.log('Horsepower: ' + car.mesin.horsepower + ' hp');
+        console.log('Racing? ' + car.racingType);
+    </script>
+</body>
+</html>
