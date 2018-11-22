@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Membuat dan Iterasi JS Object (Nested Array)</h1>
+
+    <script>
+        let restaurants = [
+            resto = {
+                name: 'Doa Ibu',
+                makanan: ['Tahu Tek', 'Lontong Kikil', 'Gado-Gado']
+            },
+            resto = {
+                name: 'Cak Jo',
+                makanan: ['Mie Ayam', 'Nasi Goreng', 'Mie Godog']
+            }
+        ];
+
+        for (let index = 0; index < restaurants.length; index++) {
+            
+            console.log('Resto: ' + restaurants[index].name);
+            console.log('Sedia:');
+
+            for (let counter = 0; 
+                 counter < restaurants[index].makanan.length; 
+                 counter++) {
+
+                console.log('-- ' + (counter + 1) + ': ' + restaurants[index].makanan[counter]);
+            }
+
+            console.log('');
+        }
+    </script>
+</body>
+</html>
