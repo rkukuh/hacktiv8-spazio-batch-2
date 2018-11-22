@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div { 
+            border-bottom: 1px solid lightgray; 
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Object + jQuery</h1>
+
+    <div>
+        <p id="nama1"></p>
+        <img id="pic1" width="200px">
+    </div>
+    <div>
+        <p id="nama2"></p>
+        <img id="pic2" width="200px">
+    </div>
+
+    <script src="../jquery/jquery-3.3.1.js"></script>
+
+    <script>
+        let foods = [
+            iceCream = {
+                name: 'Durian Breeze',
+                picture: '../images/eskrim1.jpg'
+            },
+            iceCream = {
+                name: 'Pretzel Choco',
+                picture: '../images/eskrim2.jpg'
+            }
+        ];
+
+        for (let index = 0; index < foods.length; index++) {
+            $('p#nama' + (index + 1)).html('<b>' + foods[index].name + '</b>');
+            $('img#pic' + (index + 1)).attr('src', foods[index].picture);
+        }
+    </script>
+</body>
+</html>
