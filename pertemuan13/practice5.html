@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function: Parameter dengan default value</h1>
+    
+    <script>
+        // Fungsi dengan 'default value' parameter
+        function perkalian(a = 0, b = 0) {
+            let c = a * b;
+
+            return c;
+        }
+
+        console.log(perkalian(150, 200));   // 150 * 200
+        console.log(perkalian(300));        // 300 * 0
+        console.log(perkalian());           // 0 * 0
+    </script>
+</body>
+</html>
