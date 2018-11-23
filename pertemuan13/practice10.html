@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>JS Event: change() dengan jQuery</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <select id="pilihan-armor" class="form-control">
+                    <option value="42">Iron Man Mk-42</option>
+                    <option value="43">Iron Man Mk-43</option>
+                    <option value="44">Iron Man Mk-44</option>
+                    <option value="45">Iron Man Mk-45</option>
+                    <option value="46">Iron Man Mk-46</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <img width="300px">
+            </div>
+        </div>
+    </div>
+    
+    <script src="../jquery/jquery-3.3.1.js"></script>
+
+    <script>
+        $('#pilihan-armor').change(function () {
+            let gambar = $('#pilihan-armor').val();
+
+            $('img').attr('src', '../images/mark-' + gambar + '.jpg');
+        });
+    </script>
+</body>
+</html>
