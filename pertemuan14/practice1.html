@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Bootstrap: Modal</h1>
+                <hr>
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" 
+                        data-toggle="modal" 
+                        data-target="#myModal">
+                    Tampilkan Modal
+                </button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                
+                                <h4 class="modal-title">Title Disini</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Isi modal disini</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                    Tutup
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                    Simpan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="../jquery/jquery-3.3.1.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js""></script>
+</body>
+</html>
