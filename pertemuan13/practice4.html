@@ -12,13 +12,15 @@
     <script>
         // Fungsi dengan 3 parameter
         function sapa(sapaan, titel, nama) {
+            // Gunakan 'return' jika kita ingin hasil dari function ini
+            // bisa disimpan dalam variabel nantinya
             return sapaan + ', ' + titel + ' ' + nama + '!';
         }
 
         console.log(sapa('Selamat pagi', 'Bpk', 'Tony'));
         console.log(sapa('Selamat siang', 'Ibu', 'Jessica'));
 
-        // Menyimpinpan hasil fungsi dalam variabel
+        // Menyimpan hasil fungsi dalam variabel
         let halo = sapa('Selamat malam', 'Sdr/i', 'Semua'); 
 
         console.log(halo); // ...baru kemudian ditampilkan
